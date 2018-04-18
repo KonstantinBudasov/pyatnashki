@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Arial', 'Helvetica';
+  background: lightcoral;
+  box-sizing: content-box;
+}
+
+.puzzle-area {
+  //width: 300px;
+  //height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  border: 1px solid lightseagreen;
+  background: lightseagreen;
+  user-select: none;
+}
+
+.puzzle-cell {
+  display: inline-block;
+  margin: 1px;
+  vertical-align: top;
+  font-size: 20px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+  background: firebrick;
+}
+
+.puzzle-cell#empty-cell {
+  background: lightseagreen;
+  cursor: default;
+}
